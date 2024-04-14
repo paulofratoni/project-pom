@@ -1,3 +1,5 @@
+# Created by Paulo Fratoni (01/03/2024)
+
 import pytest
 from selenium.webdriver.common.by import By
 from Pages.login_page import LoginPage

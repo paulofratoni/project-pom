@@ -1,3 +1,5 @@
+# Created by Paulo Fratoni (01/03/2024)
+
 import conftest
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC

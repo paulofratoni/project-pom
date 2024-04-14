@@ -1,3 +1,5 @@
+# Created by Paulo Fratoni (01/03/2024)
+
 import conftest
 from selenium.webdriver.common.by import By
 from Pages.base_page import Fratoni_BasePage
