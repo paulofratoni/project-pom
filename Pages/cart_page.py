@@ -22,3 +22,30 @@ class CartPage(Fratoni_BasePage):
 
     def Back_To_Products(self):
         self.Click(self.btn_back_products)
+
+#using OpenQA.Selenium;
+#using OpenQA.Selenium.Support.UI;
+#
+#public class MyClass
+#{
+#    private IWebDriver driver;
+#    private readonly By productClass;
+#
+#    public MyClass(IWebDriver driver)
+#    {
+#        this.driver = driver;
+#        this.productClass = By.XPath("//*[@class='inventory_item_name' and text()='{}']");
+#    }
+#
+#    public void VerifyProductCart(string itemName)
+#    {
+#        By item = By.XPath(string.Format(this.productClass.ToString(), itemName));
+#        VerifyElementExist(item);
+#    }
+#
+#    private void VerifyElementExist(By by)
+#    {
+#        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+#        wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(by));
+#    }
+#}

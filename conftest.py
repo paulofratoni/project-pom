@@ -16,7 +16,7 @@ from selenium.webdriver.common.by import By
 driver: webdriver.Remote
 
 @pytest.fixture
-def setup_teardown():
+def setup_teardown(url):
     
     # setup
     global driver
@@ -28,7 +28,8 @@ def setup_teardown():
 
     driver.implicitly_wait(4)
     driver.maximize_window()
-    driver.get("https://www.saucedemo.com/")
+    driver.get(url)
+    #driver.get("https://www.saucedemo.com/")
 
     # run test
     yield
